@@ -1,0 +1,31 @@
+{%extends 'base.html'%} {% block content %}
+<div class="container">
+  {% for animal in animals %}
+  <div class="row">
+    <div class="col">
+      <h1>home</h1>
+      <div class="card" style="width: 18rem">
+        <img src="{{animal.image.url}}" class="card-img-top" alt="..." />
+        <div class="card-body bg-success">
+          <h5 class="card-title text-light">{{ animal.name }}</h5>
+          <p class="card-text text-light">{{ animal.sheltered}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h1>home</h1>
+      <div class="card" style="width: 18rem">
+        <img src="{{animal.image.url}}" class="card-img-top" alt="..." />
+        <div class="card-body bg-success">
+          <h5 class="card-title text-light">{{ animal.name }}</h5>
+          <p class="card-text text-light">{{ animal.sheltered}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock content %}
